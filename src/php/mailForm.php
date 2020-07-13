@@ -9,11 +9,17 @@
 		$message="Name :".$name."\n"."\n"."Wrote the following :"."\n\n".$msg;
 		$headers="From: ".$email;
 
+		mail($to, $subject, $message, $headers);
+		//header("Location: index.php?mailsend");
+		
+
+		
 		if(mail($to, $subject, $message, $headers)){
 			echo "<h1>Sent Successfully! Thank you"." ".$name.", We will contact you shortly!</h1>";
 		}
 		else{
 			echo "Something went wrong!";
 		}
+		
 	}
 ?>

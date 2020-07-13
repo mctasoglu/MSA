@@ -3,14 +3,11 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
-import Navbar from "./components/navbar";
+
 import "bootstrap/dist/css/bootstrap.css";
-import $ from "jquery";
-import Popper from "popper.js";
+
 import "bootstrap/dist/js/bootstrap.bundle.min";
 import "./index.css";
-import Carousel from "./components/carousel";
-import About from "./components/about";
 
 ReactDOM.render(<App />, document.getElementById("root"));
 
