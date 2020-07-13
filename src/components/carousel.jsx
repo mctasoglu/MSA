@@ -22,7 +22,12 @@ class Carousel extends Component {
     let carouselItems = this.state.pictures.map((p) => (
       <div
         className={p.class}
-        style={{ transitionDuration: "4s", pause: "6s" }}
+        style={{
+          transition: "ease",
+          transitionDuration: "4s",
+          pause: "8s",
+          position: "relative",
+        }}
       >
         <img className="d-block w-100" src={p.pic} alt={p.alt} />
       </div>
@@ -35,10 +40,12 @@ class Carousel extends Component {
     if (String(e.target.className).endsWith("clicked")) {
       e.target.style.color = "white";
       let idx = e.target.className.lastIndexOf(" ");
-      e.target.className = e.target.className.substring(0, idx);
+      let newClass = String(e.target.className).substring(0, idx);
+      e.target.setAttribute("class", newClass);
     } else {
       e.target.style.color = "green";
-      e.target.className = e.target.className + " clicked";
+      let newClass = String(e.target.className) + " clicked";
+      e.target.setAttribute("class", newClass);
     }
   };
 

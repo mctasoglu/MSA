@@ -24,7 +24,7 @@ class Form extends Component {
         >
           Contact Us!
         </h1>
-        <form action="../php/mailForm.php">
+        <form action="mailForm.php">
           <div
             className="form-row"
             style={{ marginBottom: "25px", justifyContent: "center" }}
