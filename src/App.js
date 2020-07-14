@@ -32,7 +32,7 @@ class App extends Component {
       { id: "Who-We-Are-Tab", value: "Who We Are", target: "mission" },
       { id: "Services", value: "Services", target: "resources" },
       { id: "Meet-The-Board", value: "Meet the Board", target: "board" },
-      { id: "Contact", value: "Contact", target: "#" },
+      { id: "Contact", value: "Contact", target: "form" },
     ],
   };
 

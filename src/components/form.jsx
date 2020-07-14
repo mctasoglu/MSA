@@ -73,6 +73,7 @@ class Form extends Component {
   render() {
     return (
       <div
+        id="form"
         className="Form"
         style={{
           margin: "25px",
