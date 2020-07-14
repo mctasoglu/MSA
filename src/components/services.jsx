@@ -56,7 +56,7 @@ class Services extends Component {
           className="col-8"
           style={{ alignItems: "center", display: "flex" }}
         >
-          <h7>{c.paragraph}</h7>
+          {c.paragraph}
         </div>
       </div>
     ));

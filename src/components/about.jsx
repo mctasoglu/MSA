@@ -13,7 +13,7 @@ class About extends Component {
       id: null,
       targetArr: [],
       missionStatement:
-        "The Carnegie Mellon Muslim Student Association's mission is to serve the needs\n of the Muslim community and foster a comfortable environment on campus. By\n following God's commands and our dear Prophet's examples, we aim to function\n as a model student organization that promotes human rights, forges alliances\n with other student organizations, and nurtures a deeper understanding of Islam.",
+        "The Carnegie Mellon Muslim Student Association's mission is to serve the needs of\n the Muslim community and foster a comfortable environment on campus. By\n following God's commands and our dear Prophet's examples, we aim to function as\n a model student organization that promotes human rights, forges alliances with\n other student organizations, and nurtures a deeper understanding of Islam.",
     };
   }
 
@@ -56,7 +56,7 @@ class About extends Component {
             className="basmala"
             src={basmala}
             style={{
-              width: "800px",
+              width: "60vw",
               height: "auto",
             }}
           ></img>
@@ -69,6 +69,7 @@ class About extends Component {
             className={
               this.state.isVisible ? "translation-shown" : "translation-hidden"
             }
+            style={{ fontWeight: "bold" }}
           >
             {this.state.translation}
           </h1>
@@ -77,9 +78,11 @@ class About extends Component {
             style={{
               marginLeft: "20%",
               marginRight: "20%",
+              font: "20px Arial",
+              marginTop: "20px",
             }}
           >
-            <h5>{this.state.targetArr}</h5>
+            {this.state.targetArr}
           </div>
         </div>
       </div>

@@ -7,6 +7,7 @@ import About from "./components/about";
 import Services from "./components/services";
 import Board from "./components/board";
 import Form from "./components/form";
+import Footer from "./components/footer";
 
 const style = {
   color: "green",
@@ -74,6 +75,7 @@ class App extends Component {
         <Services />
         <Board />
         <Form />
+        <Footer />
       </React.Fragment>
     );
   }
